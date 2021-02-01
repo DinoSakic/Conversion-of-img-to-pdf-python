@@ -3,7 +3,7 @@ from glob import glob
 
 # za pravilan raspored slika u pdf-u potrebno je slike numerirati na nacin:01,02,03...,10,11,....
 ime_pdfa = ''
-path = ''
+path = r''
 
 def konvertuj(ime_pdfa,path):
     try:
