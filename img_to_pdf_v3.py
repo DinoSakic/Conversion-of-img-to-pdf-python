@@ -26,7 +26,6 @@ def konvertuj(ime_pdfa, path):
 
 # problem nastaje sa .png slikama koje su RGBA format. Ne mogu se direktno pretvoriti u pdf, zato je ovako skarabudzeno
         for kvaka22 in indeks:  # ovo je brze od: lista_slika = [slika.convert('RGB') for slika in lista_slika]
-            # lista_slika = [slika.rotate(270) for slika in lista_slika] testiranje za rotaciju, treba izbrisati nekad
             lista_slika[kvaka22] = lista_slika[kvaka22].convert('RGB')
 
         lista_slika[0].save(ime_pdfa, color='RGB', resolution=100.0, save_all=True, append_images=lista_slika[1:])
