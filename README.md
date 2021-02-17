@@ -1,2 +1,3 @@
 # Conversion-of-jpg-to-pdf-python
--Uses PIL and glob modules
+Simple project for fun.
+Actually useful for organizing college materials.
